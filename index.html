@@ -1,112 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Insurtech Portfolio</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header / Navigation (Minimal, as per minimal style) -->
+    <header>
+        <nav>
+            <div class="logo">JD</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Subtle Background -->
-  <div class="bg-pattern"></div>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <h1>Your Name</h1>
-    <p class="tagline">Insurance student exploring technology and insurtech solutions</p>
-    <a href="#projects" class="btn-primary">View Portfolio</a>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an insurance student with a strong interest in technology, UI/UX, and data-driven solutions.
-      Passionate about combining insurance knowledge with modern tech to create efficient and user-focused insurtech products.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills" id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-group">
-      <h3>Technical</h3>
-      <div class="skill-tags">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>UI/UX</span>
-        <span>Advanced Excel</span>
-      </div>
-    </div>
-
-    <div class="skills-group">
-      <h3>Insurance</h3>
-      <div class="skill-tags">
-        <span>Risk Analysis</span>
-        <span>Insurance Fundamentals</span>
-        <span>Policy Understanding</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <h2>Projects & Case Studies</h2>
-
-    <div class="project-grid">
-      <div class="project-card">
-        <h4>Insurtech Dashboard Concept</h4>
-        <p>UI/UX case study for a simple insurance dashboard focusing on clarity and usability.</p>
-        <div class="project-meta">
-          <span>Role: UI/UX Designer</span>
-          <span>Tools: Figma</span>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>John Doe</h1>
+            <p class="tagline">Creative Developer & Designer</p>
+            <button class="cta-button" onclick="scrollToSection('projects')">View My Work</button>
         </div>
-      </div>
+    </section>
 
-      <div class="project-card">
-        <h4>Risk Analysis Mini Project</h4>
-        <p>Basic risk analysis using Excel and Python to support insurance decision making.</p>
-        <div class="project-meta">
-          <span>Role: Analyst</span>
-          <span>Tools: Python, Excel</span>
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/300x300/cccccc/000000?text=Profile+Photo" alt="John Doe Profile Photo" class="profile-img">
+                <div class="bio">
+                    <p>Hi, I'm John Doe, a passionate web developer with over 5 years of experience in creating elegant, user-centric digital experiences. I specialize in front-end technologies and love turning ideas into beautiful, functional websites.</p>
+                    <p>When I'm not coding, you can find me exploring new design trends or hiking in the mountains.</p>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="project-card">
-        <h4>Simple Insurance Website</h4>
-        <p>Static website built with HTML and CSS focusing on clean layout and trust.</p>
-        <div class="project-meta">
-          <span>Role: Frontend</span>
-          <span>Tools: HTML, CSS</span>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <div class="contact-icons">
-      <a href="mailto:your@email.com"><i class='bx bx-envelope'></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
-      <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
-    </div>
-  </section>
+    <!-- Projects / Portfolio Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/cccccc/000000?text=Project+1" alt="Project 1 Screenshot">
+                    <div class="card-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>A responsive e-commerce site built with HTML, CSS, and JavaScript. Features include product listings, cart functionality, and payment integration.</p>
+                        <a href="#" class="project-link">View Live</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/cccccc/000000?text=Project+2" alt="Project 2 Screenshot">
+                    <div class="card-content">
+                        <h3>Portfolio App</h3>
+                        <p>A personal portfolio app using React and Node.js. Showcases projects with dynamic filtering and smooth animations.</p>
+                        <a href="#" class="project-link">View Live</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/cccccc/000000?text=Project+3" alt="Project 3 Screenshot">
+                    <div class="card-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>An interactive weather dashboard with API integration, built with vanilla JavaScript and CSS for a clean, minimal UI.</p>
+                        <a href="#" class="project-link">View Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2026 Your Name. Built with clarity & purpose.</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <p>Get in touch! I'd love to hear from you.</p>
+                <a href="mailto:john.doe@example.com" class="contact-email">john.doe@example.com</a>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 John Doe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
